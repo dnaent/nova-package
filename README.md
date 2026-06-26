@@ -19,7 +19,7 @@ Check out the [`marketing-assets/`](marketing-assets/) directory for our launch 
 
 ## 📦 Packages
 
-This monorepo houses the following two foundational packages:
+This monorepo houses the following three foundational packages:
 
 ### 1. [Nova LLM Router](file:///Users/Phantom/Desktop/DNAENT™/Nova_Ecosystem/nova-package/nova-llm-router)
 A highly-resilient, multi-vendor LLM routing engine featuring context-aware token budgeting and automatic cross-provider failover.
@@ -44,21 +44,21 @@ A suite of production-hardened web security toolkits, caching mechanisms, job qu
 
 ## 🎨 System Architecture
 
-```
-                    +-----------------------------------+
-                    |         Nova Dashboard UI         |
-                    +-------------------+---------------+
-                                        |
-                                        v
-                    +-------------------+---------------+
-                    |        Nova LLM Router            | (Open Source)
-                    +---------+------------------+------+
-                              |                  |
-            (429/500 Failover)|                  | (Token Budgeting)
-                              v                  v
-                    +---------+----+    +--------+------+
-                    | Anthropic AI |    | Google Gemini |
-                    +--------------+    +---------------+
+```text
+                               +-----------------------------------+
+                               |         Nova Dashboard UI         |
+                               +-------------------+---------------+
+                                                   |
++-----------------------+      +-------------------+---------------+      +-----------------------+
+|    Nova Agent SDK     |<---->|        Nova LLM Router            |<---->|   Nova Infra Utils    |
+| (Events & Telemetry)  |      |   (Multi-vendor Orchestration)    |      | (Security & Caching)  |
++-----------------------+      +---------+------------------+------+      +-----------------------+
+                                         |                  |
+                       (429/500 Failover)|                  | (Token Budgeting)
+                                         v                  v
+                               +---------+----+    +--------+------+
+                               | Anthropic AI |    | Google Gemini |
+                               +--------------+    +---------------+
 ```
 
 ---
