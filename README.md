@@ -4,9 +4,16 @@
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/)
 [![Nova Ecosystem](https://img.shields.io/badge/Ecosystem-Nova-orange.svg)](https://github.com/dnaent/nova-ecosystem)
 
-Welcome to the official open-source repository for the core infrastructure packages of the **Nova Ecosystem**—the world's first autonomous AI-powered development platform. 
+Welcome to the official open-source repository for the core infrastructure packages of the **Nova Ecosystem**.
+
+**The core open-source infrastructure of the Nova Ecosystem. An enterprise-grade LLM orchestration engine featuring context-aware token budgeting and zero-downtime provider failover for multi-agent systems.**
 
 Derived directly from our proprietary enterprise app-factory backend, these tools provide standard, production-ready libraries for multi-agent networking, event telemetry, and highly-resilient multi-vendor LLM orchestration.
+
+---
+
+## 🚀 Launch & Marketing Assets
+Check out the [`marketing-assets/`](marketing-assets/) directory for our launch graphics, explainer slides, and failover logic animations.
 
 ---
 
