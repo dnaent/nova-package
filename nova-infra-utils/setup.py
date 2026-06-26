@@ -6,7 +6,8 @@ setup(
     description="Generic infrastructure utilities, security middleware, and helper services from the Nova Ecosystem",
     author="DNA Entertainment Ltd",
     packages=find_packages(),
-    install_packages=[
+    python_requires=">=3.10",
+    install_requires=[
         "redis",
         "bleach",
         "python-magic",
