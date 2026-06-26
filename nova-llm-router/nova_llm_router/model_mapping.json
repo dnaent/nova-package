@@ -1,0 +1,21 @@
+{
+    "fixed_models": {
+        "agent_type_a": "gemini-2.5-flash",
+        "agent_type_b": "claude-3.5-sonnet"
+    },
+    "aliases": {
+        "claude-latest": "claude-3-5-sonnet-20241022",
+        "gpt-latest": "gpt-4o",
+        "gemini-latest": "gemini-2.5-flash"
+    },
+    "tiers": {
+        "free": {
+            "agent_type_a": "gpt-4o-mini",
+            "agent_type_b": "gemini-2.5-flash"
+        },
+        "professional": {
+            "agent_type_a": "claude-latest",
+            "agent_type_b": "gpt-latest"
+        }
+    }
+}
