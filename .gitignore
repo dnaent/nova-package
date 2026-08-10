@@ -33,3 +33,7 @@ htmlcov/
 # OS
 .DS_Store
 Thumbs.db
+
+# Ensure .svg formats are not ignored for brand guidelines and frameworks
+!*.svg
+!**/*.svg
